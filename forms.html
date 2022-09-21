@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web forms</title>
+</head>
+<body>
+    <p><h2>Make your reservation!</h2></p>
+
+    <form>
+       
+        <input type="text" placeholder="Name" minlength="4" maxlength="12" required>
+    
+        <br><br/>
+        
+        <input type="text" placeholder="Surname" minlength="4" maxlength="12" required>
+
+        <br><br/>
+
+        <input type="tel" placeholder="Phone number" required pattern="\d{9}" required>
+
+        <br><br/>
+
+        <input type="checkbox" value="Male" id="male">
+        <label for="male">Male</label>
+        <input type="checkbox" value="Female" id="female">
+        <label for="female">Female</label>
+
+        <br><br/>
+
+        <input type="number" name="Grade" min="1" max="20">
+        Persons
+
+        <br><br/>
+
+        <input type="date">
+
+        <br><br/>
+        Upload your passport!
+        <input type="file" name="photo" required accept="image/jpg,image/png">
+
+        <br><br/>
+
+        <progress name="File_upload" id="file" value="50" max="100"></progress>
+
+        <br><br/>
+
+        <label for="Hotels">Hotels</label>
+        <select name="Hotels" id="Hotels">
+        <optgroup label="Te gjitha hotelet">
+            <option value="">Hotel A</option>
+            <option value="">Hotel B</option>
+            <option value="">Hotel C</option>
+            <option value="">Hotel D</option>
+
+        </select> 
+        </optgroup>
+
+        <br><br/>
+
+        <input type="submit" value="Reserve Here">
+    </form>
+</body>
+</html>
