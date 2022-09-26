@@ -6,49 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web forms</title>
 </head>
-<body>
-    <p><h2>Make your reservation!</h2></p>
+<body> 
 
-    <form>
+        <iframe src="http://flyksa.com" width="100%" style="height: 80vh"></iframe>
+
+        <fieldset>
+        <legend><p><h1>Make your reservation!</h1></p></legend>    
+        <form style="text-align: center;">
+
+        <img src="Airlines.jpg" alt="image" width="1240" height="720">  
+        
+        <br>
+
+        <p><h2 style="background-color:rgba(18, 151, 213, 0.742);">Te dhënat personale:</h2></p>
        
-        <input type="text" placeholder="Name" minlength="4" maxlength="12" required>
+        <input type="text" placeholder="Emri" minlength="4" maxlength="12" required>
     
         <br><br/>
         
-        <input type="text" placeholder="Surname" minlength="4" maxlength="12" required>
+        <input type="text" placeholder="Mbiemri" minlength="4" maxlength="12" required>
 
         <br><br/>
 
-        <input type="tel" placeholder="Phone number" required pattern="\d{9}" required>
+        <input type="tel" placeholder="Numri i telefonit" required pattern="\d{9}" required>
 
         <br><br/>
 
-        <input type="checkbox" value="Male" id="male">
-        <label for="male">Male</label>
-        <input type="checkbox" value="Female" id="female">
-        <label for="female">Female</label>
+        <input type="checkbox" value="Mashkull" id="mashkull">
+        <label for="mashkull">Mashkull</label>
+        <input type="checkbox" value="Femer" id="femer">
+        <label for="femer">Femer</label>
 
         <br><br/>
 
         <input type="number" name="Grade" min="1" max="20">
-        Persons
+        Personat
 
         <br><br/>
+        <p>Data e nisjes
+        <input type="date"></p>
 
-        <input type="date">
+        <p>Bashkangjit pasaporten
+        <input type="file" name="photo" required accept="image/jpg,image/png"></p>
 
-        <br><br/>
-        Upload your passport!
-        <input type="file" name="photo" required accept="image/jpg,image/png">
-
-        <br><br/>
+        <br>
 
         <progress name="File_upload" id="file" value="50" max="100"></progress>
 
         <br><br/>
 
-        <label for="Hotels">Hotels</label>
-        <select name="Hotels" id="Hotels">
+        <label for="Hotelet">Hotels</label>
+        <select name="Hotelet" id="Hotelet">
         <optgroup label="Te gjitha hotelet">
             <option value="">Hotel A</option>
             <option value="">Hotel B</option>
@@ -60,7 +68,8 @@
 
         <br><br/>
 
-        <input type="submit" value="Reserve Here">
+        <input type="submit" value="Bëj rezervimin">
     </form>
+        </fieldset>
 </body>
 </html>
